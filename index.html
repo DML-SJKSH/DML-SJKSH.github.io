@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script src="js/echarts.min.js"> </script>
+    <script src="js/chalk.js"></script>
+
+
+
+    <title>数据可视化——蘑菇</title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Template CSS -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/animate.css" rel="stylesheet">
+    <link href="static/css/style-magnific-popup.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/icons-main.css" rel="stylesheet">
+    <link href="static/css/icons-helper.css" rel="stylesheet">
+    
+    <!-- RS5.0 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="static/css/settings.css">
+     
+    <!-- RS5.0 Layers and Navigation Styles -->
+    <link rel="stylesheet" type="text/css" href="static/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="static/css/navigation.css">	
+    
+    <!-- Google Fonts -->
+    <link href='static/css/css.css' rel='stylesheet' type='text/css'>
+    <link href='static/css/css1.css' rel='stylesheet' type='text/css'>
+    <link href='static/css/css2.css' rel='stylesheet' type='text/css'>
+
+    <!-- Font Favicon -->
+   
+      
+ 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--headerIncludes-->
+
+    
+</head>
+<body >
+    
+	<!--begin loader -->
+    <div id="loader">
+    	<div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+    	</div>
+    </div>
+    <!--end loader -->
+    
+    <!--begin header -->
+    <header class="header">
+
+        <!--begin nav -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            
+            <!--begin container -->
+            <div class="container">
+        
+                <!--begin navbar -->
+                <div class="navbar-header">
+                    <button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                                                                        
+                
+                </div>
+                        
+               
+                <!--end navbar -->
+                                    
+            </div>
+    		<!--end container -->
+            
+        </nav>
+    	<!--end nav -->
+        
+    </header>
+    <!--end header -->
+       
+    
+
+
+
+
+
+    <!--begin home-hero-section -->
+    <div id="hero-section" class="home-hero-section">
+                          
+        <div id="rev_slider_202_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="concept1" style="background-color:#000000;padding:0px;">
+    
+            <!-- START REVOLUTION SLIDER 5.1.1RC fullscreen mode -->
+            <div id="rev_slider_202_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.1RC">
+            
+                <ul>
+                
+                    <!-- SLIDE  -->
+                    <li data-index="rs-672" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/rs1-100x100.jpg" data-rotate="0" data-saveperformance="off" data-title="FRENCH CUISINE" data-description="">
+                    
+                        <!-- MAIN IMAGE -->
+                        <img src="static/picture/首页.png" alt="" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                        <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-shape tp-shapewrapper " id="slide-674-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="bytrigger" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-end="bytrigger" data-lasttriggerstate="keep" style="z-index: 5;background-color:rgba(255, 255, 255, 0.35);border-color:rgba(0, 0, 0, 0);">
+                    </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption Concept-SubTitle   tp-resizeme" id="slide-674-layer-16" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-105','-105','-97','-114']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;font-style:italic;">
+                    </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption Concept-SubTitle   tp-resizeme" id="slide-672-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['115','115','107','104']" data-fontsize="['28','28','20','20']" data-lineheight="['28','28','20','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;font-style:italic;">欢迎来到蘑菇世界
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption Concept-Title   tp-resizeme" id="slide-672-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" data-fontsize="['70','70','50','40']" data-lineheight="['70','70','50','40']" data-width="['none','none','none','400']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1700" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;text-align:center;">MUSHROOM
+                    </div>
+                    
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption Dining-BtnLight rev-btn" id="slide-672-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['612','552','641','500']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:2;" data-start="2100" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-672-layer-6","delay":""},{"event":"click","action":"scrollbelow","offset":"-76px"}]' data-responsive_offset="on" data-responsive="off" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 9; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">MEET MUSHROOM
+                    </div>
+
+                    </li>
+                    
+                    <!-- SLIDE  -->
+                    <li data-index="rs-674" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/rs2-100x100.jpg" data-rotate="0" data-saveperformance="off" data-title="AWARDED CHEFS" data-description="">
+                    
+                        <!-- MAIN IMAGE -->
+                        <img src="static/picture/首页2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-674-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="bytrigger" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-end="bytrigger" data-lasttriggerstate="keep" style="z-index: 5;background-color:rgba(255, 255, 255, 0.35);border-color:rgba(0, 0, 0, 0);">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption Concept-SubTitle   tp-resizeme" id="slide-674-layer-16" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-105','-105','-97','-114']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;font-style:italic;"><img src="static/picture/标题5.png" alt="" width="350" height="175" data-no-retina="">
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption Concept-SubTitle   tp-resizeme" id="slide-672-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['115','115','107','104']" data-fontsize="['28','28','20','20']" data-lineheight="['28','28','20','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;font-style:italic;">欢迎来到蘑菇世界
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption Concept-Title   tp-resizeme" id="slide-672-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" data-fontsize="['70','70','50','40']" data-lineheight="['70','70','50','40']" data-width="['none','none','none','400']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1700" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;text-align:center;">MUSHROOM
+                        </div>
+                        
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption Dining-BtnLight rev-btn" id="slide-672-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['612','552','641','500']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:2;" data-start="2100" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-672-layer-6","delay":""},{"event":"click","action":"scrollbelow","offset":"-76px"}]' data-responsive_offset="on" data-responsive="off" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 9; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">MEET MUSHROOM
+                        </div>
+
+                    </li>
+                    
+                    <!-- SLIDE  -->
+                    <li data-index="rs-673" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/rs3-100x100.jpg" data-rotate="0" data-saveperformance="off" data-title="INGREDIENTS" data-description="">
+                    
+                        <!-- MAIN IMAGE -->
+                        <img src="static/picture/首页3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-674-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="bytrigger" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-end="bytrigger" data-lasttriggerstate="keep" style="z-index: 5;background-color:rgba(255, 255, 255, 0.35);border-color:rgba(0, 0, 0, 0);">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption Concept-SubTitle   tp-resizeme" id="slide-674-layer-16" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-105','-105','-97','-114']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;font-style:italic;"><img src="static/picture/标题5.png" alt="" width="350" height="175" data-no-retina="">
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption Concept-SubTitle   tp-resizeme" id="slide-672-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['115','115','107','104']" data-fontsize="['28','28','20','20']" data-lineheight="['28','28','20','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;font-style:italic;">欢迎来到蘑菇世界
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption Concept-Title   tp-resizeme" id="slide-672-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" data-fontsize="['70','70','50','40']" data-lineheight="['70','70','50','40']" data-width="['none','none','none','400']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" data-start="1700" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;text-align:center;">MUSHROOM
+                        </div>
+                        
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption Dining-BtnLight rev-btn" id="slide-672-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['612','552','641','500']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:2;" data-start="2100" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-672-layer-6","delay":""},{"event":"click","action":"scrollbelow","offset":"-76px"}]' data-responsive_offset="on" data-responsive="off" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 9; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">MEET MUSHROOM
+                        </div>
+
+                    </li>
+                    
+                </ul>
+                
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                
+            </div>
+            
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+              
+    </div>
+    <!--end home-hero-section -->
+  
+    
+
+
+
+
+    <!--旭日图-->
+    <section class="section-white">
+    
+      <!--begin container-->
+      <div class="container"> 
+
+            <!--begin row-->
+            <div class="row">
+            <!--begin col-md-6-->
+            <div class="col-md-6 wow slideInRight "id="B1">
+                                    
+                <!--begin carousel1-->
+                <div id="myCarousel1" class="carousel carousel1 slide" data-interval="true">
+                    
+                    <!--begin carousel-inner-->
+                    <div class="carousel-inner">
+                    
+                        <!--begin carousel item-->
+                        <div class="item active">
+                        
+                            <!--begin image-wrapper-->
+                            <div class="image-wrapper">
+                                <img src="static/picture/蘑菇1.jpg" alt="picture" class="width-100">
+                            </div>
+                            <!--end image-wrapper-->
+                            
+                        </div>
+                        <!--end carousel item-->
+                        
+                        <!--begin carousel item-->
+                        <div class="item">
+                        
+                            <!--begin image-wrapper-->
+                            <div class="image-wrapper">
+                                <img src="static/picture/蘑菇2.jpg" alt="picture" class="width-100">
+                            </div>
+                            <!--end image-wrapper-->
+                            
+                        </div>
+                        <!--end carousel item-->
+                                                   
+                    </div>
+                    <!--end carousel-inner-->
+                    
+                    <!-- begin carousel-indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                    </ol>
+                    <!-- end carousel-indicators -->
+                    
+                </div>
+                <!--end carousel1-->
+                                        
+            </div>
+            <!--end col-md-6-->
+                <!--begin col-md-6-->
+                <div class="col-md-6 text-center padding-top-50 padding-bottom-50 wow slideInLeft"id="one" >
+                    <div class="main-container" id="xuritu" style="width:100%">
+                        <iframe src="第一部分.html" width="150%" height="450" frameborder="0">
+                            
+                       </iframe>
+                        </div>
+  
+                 </div>
+
+
+
+                
+
+                 
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->
+   
+    </section>
+    <!--end section-white-->
+    
+
+
+
+
+    <!--begin image-section -->
+    <section class="image-section">
+    
+        <!--begin image-overlay -->
+        <div class="image-overlay"></div>
+        <!--end image-overlay -->
+            
+        <!--begin container-->
+        <div class="container image-section-inside">
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-10-->
+                <div class="col-md-10 col-md-offset-1 text-center">
+                
+                    
+                    
+                  
+                    
+                </div>
+                <!--end col-md-6-->
+            
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->
+        
+    </section>
+    <!--end image-section -->
+    
+
+
+
+    
+
+           
+            
+      <!--价格趋势-->
+      <section class="section-white">
+    
+        <!--begin container-->
+        <div class="container"> 
+  
+              <!--begin row-->
+              <div class="row">
+              
+                  <!--begin col-md-6-->
+                  <div class="col-md-6 wow slideInLeft">
+                                      
+                      <!--begin carousel1-->
+                      <div id="myCarousel2" class="carousel carousel1 slide" data-interval="true">
+                          
+                          <!--begin carousel-inner-->
+                          <div class="carousel-inner">
+                          
+                              <!--begin carousel item-->
+                              <div class="item active">
+                              
+                                  <!--begin image-wrapper-->
+                                  <div class="image-wrapper">
+                                      <img src="static/picture/蘑菇17.jpg" alt="picture" class="width-100">
+                                  </div>
+                                  <!--end image-wrapper-->
+                                  
+                              </div>
+                              <!--end carousel item-->
+                              
+                              <!--begin carousel item-->
+                              <div class="item">
+                              
+                                  <!--begin image-wrapper-->
+                                  <div class="image-wrapper">
+                                      <img src="static/picture/蘑菇18.jpg" alt="picture" class="width-100">
+                                  </div>
+                                  <!--end image-wrapper-->
+                                  
+                              </div>
+                              <!--end carousel item-->
+                                                         
+                          </div>
+                          <!--end carousel-inner-->
+                          
+                          <!-- begin carousel-indicators -->
+                          <ol class="carousel-indicators">
+                              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel2" data-slide-to="1"></li>
+                          </ol>
+                          <!-- end carousel-indicators -->
+                          
+                      </div>
+                      <!--end carousel1-->
+                                              
+                  </div>
+                  <!--end col-md-6-->
+                  
+                  <!--begin col-md-6-->
+                  <div class="col-md-6 text-center padding-top-50 padding-bottom-50 wow slideInRight">
+              
+                    <div class="main-container" id="jiage" style="width:100%">
+                        <iframe src="第二部分.html" width="150%" height="450" frameborder="0">
+                            
+                       </iframe>
+                        </div>
+                  
+                  </div>
+                  <!--end col-md-6-->
+                   
+              </div>
+              <!--end row-->
+              
+          </div>
+          <!--end container-->
+          
+      </section>
+      <!--end section-white-->
+    
+
+
+
+    <!--地图 -->
+    <section class="home-menu-section">
+    
+        <!--begin image-overlay -->
+        
+        <!--end image-overlay -->
+        
+        
+
+        <!--替换部分div-->
+        <!--begin container-->
+        <div class="container image-section-inside"id="ditu">
+            <div class="main-container" id="ditu2" style="width:100%">
+                <iframe src="第三部分.html" width="500%" height="800" frameborder="0"scrolling="no">
+                    
+               </iframe>
+                </div>
+
+        </div>
+        <!--end container-->    
+        
+    </section>
+    <!--end home-menu-section -->
+    
+
+
+    
+<!--饼图-->
+  <!--begin section-white-->
+  <section class="section-white">
+    
+    <!--begin container-->
+    <div class="container"> 
+
+          <!--begin row-->
+          <div class="row">
+          
+              <!--begin col-md-6-->
+              <div class="col-md-6 wow slideInLeft">
+                                  
+                  <img src="static/picture/蘑菇6.jpg" alt="picture" class="width-100">
+                                  
+              </div>
+              <!--end col-md-6-->
+              
+              <!--begin col-md-6-->
+              <div class="col-md-6 text-center padding-top-40 padding-bottom-40 wow slideInRight">
+          
+                <div class="main-container" id="bingtu" style="width:100%">
+                    <iframe src="第四部分.html" width="150%" height="450" frameborder="0"scrolling="no">
+                        
+                   </iframe>
+                    </div>
+              
+              </div>
+              <!--end col-md-6-->
+               
+          </div>
+          <!--end row-->
+          
+      </div>
+      <!--end container-->
+      
+  </section>
+  <!--end section-white-->
+  
+  
+  <div id="rev_slider_30_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="media-carousel-autoplay30" style="margin:0px auto;background-color:#fff;padding:0px;margin-top:0px;margin-bottom:0px;">
+      
+      <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
+      <div id="rev_slider_30_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+          
+          <ul>	
+              
+              <!-- SLIDE  -->
+              <li data-index="rs-122" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Real Webdesign" data-param1="Regular Image" data-description="">
+                  
+                  <!-- MAIN IMAGE -->
+                  <img src="static/picture/蘑菇8.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                  
+              </li>
+              
+              <!-- SLIDE  -->
+              <li data-index="rs-122" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Real Webdesign" data-param1="Regular Image" data-description="">
+                  
+                  <!-- MAIN IMAGE -->
+                  <img src="static/picture/蘑菇9.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                  
+              </li>
+              
+              <!-- SLIDE  -->
+              <li data-index="rs-122" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Real Webdesign" data-param1="Regular Image" data-description="">
+                  
+                  <!-- MAIN IMAGE -->
+                  <img src="static/picture/蘑菇10.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                  
+              </li>
+              
+              <!-- SLIDE  -->
+              <li data-index="rs-122" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Real Webdesign" data-param1="Regular Image" data-description="">
+                  
+                  <!-- MAIN IMAGE -->
+                  <img src="static/picture/蘑菇11.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                  
+              </li>
+              
+          </ul>
+          
+          <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+          
+      </div>
+      
+  </div><!-- END REVOLUTION SLIDER -->
+
+
+
+
+
+<!--关系图 -->
+
+ <!--begin section-white-->
+ <section class="section-white small-padding no-padding-bottom">
+    
+    <!--begin container-->
+    <div class="container"> 
+
+          <!--begin row-->
+          <div class="row">
+          
+              <!--begin col-md-6-->
+              <div class="col-md-6 text-center padding-top-50 padding-bottom-50 wow slideInLeft">
+          
+                <div class="main-container" id="guanxitu" style="width:100%">
+                    <iframe src="第五部分.html" width="150%" height="600" frameborder="0"scrolling="no">
+                        
+                   </iframe>
+                    </div>
+              
+              </div>
+              <!--end col-md-6-->
+              
+              <!--begin col-md-6-->
+              <div class="col-md-6 wow slideInRight">
+                                  
+                  <img src="static/picture/蘑菇7.jpg" alt="picture" class="width-100">
+                                  
+              </div>
+              <!--end col-md-6-->
+               
+          </div>
+          <!--end row-->
+          
+      </div>
+      <!--end container-->
+      
+  </section>
+  <!--end section-white-->
+
+
+
+
+
+    <!--begin instagram feed -->
+    <div id="instafeed">
+        
+        <!--begin iinstagram-text -->
+        <div class="instagram-text">
+        
+        	<a href="#" target="_blank" class="instagram-icon"><i class="fa fa-instagram"></i></a>
+        
+        	<p>Please follow on Instagram<br>for latest recipes.</p>
+        
+        </div>
+        <!--end instagram-text -->
+        
+    </div>
+    <!--end instagram feed -->
+    
+
+
+    <!--蘑菇图片部分-->
+    <!--begin slideshow section -->
+    <section class="section-white no-padding-bottom">
+        
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-12-->
+                <div class="col-md-12 text-center">
+                
+                    <div class="text-center">
+                    
+                        <span class="comic-text">Mushroom</span>
+                        
+                        <h2 class="section-title no-margin">蘑菇一览</h2>
+                        
+                    </div>
+            
+                </div>
+                <!--end col-md-12-->
+            
+            </div>
+            <!--end row-->
+            
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-12-->
+                <div class="col-md-12 text-center">
+                
+                    <!--begin rev_slider_108_1_wrapper-->
+                    <div id="rev_slider_108_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="food-carousel80" style="margin:0px auto;padding:0px;margin-top:0px;margin-bottom:0px;">
+                        
+                        <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
+                        <div id="rev_slider_108_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                            
+                            <ul>	
+                            
+                                <!-- SLIDE  -->
+                                <li data-index="rs-326" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="images/rs-images/food0-150x100.jpg" data-rotate="0" data-saveperformance="off" data-title="干巴菌" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="static/picture/干巴菌.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                                    <!-- LAYERS -->
+    
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption FoodCarousel-Content   tp-resizeme" id="slide-326-layer-3" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['420']" data-height="['420']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 5; min-width: 420px; max-width: 420px; max-width: 420px; max-width: 420px; white-space: normal;"><span class="foodcarousel-headline" style=" color: #252525; font-weight:700; text-decoration: underline;">干巴菌</span><br>
+                                        别名：干巴菌、牛牙齿菌等<br>
+                                        门：担子菌门（Basidiomycota）<br>
+                                        纲：伞菌纲（Agaricomycetes）<br>
+                                        目：革菌目（Thelephorales）<br>
+                                        科：革菌科Thelephoraceae<br>
+                                        属：革菌属（Thelephora）
+                            <hr style="border-top: 1px solid #292e31;">
+                            干巴菌具有革菌科的典型特征，全菌干燥革质，从基部分出扇状或莲座状瓣片，子实层既不成孔状，也不呈褶片状，而是表面光辫或具疣状突起。
+                                    </div>
+                            
+    
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption FoodCarousel-Button rev-btn " id="slide-326-layer-1" data-x="center" data-hoffset="" data-y="bottom" data-voffset="50" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="0" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-326-layer-3","delay":""},{"event":"click","action":"startlayer","layer":"slide-326-layer-5","delay":"200"},{"event":"click","action":"stoplayer","layer":"slide-326-layer-1","delay":""}]' data-responsive_offset="on" data-responsive="off" data-lasttriggerstate="reset" style="z-index: 6; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="pe-7s-note2" style="font-size: 21px; float: left;margin-top:-6px;margin-right:10px;"></i> 详情
+                                    </div>
+    
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption FoodCarousel-CloseButton rev-btn  tp-resizeme" id="slide-326-layer-5" data-x="441" data-y="110" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"stoplayer","layer":"slide-326-layer-3","delay":""},{"event":"click","action":"stoplayer","layer":"slide-326-layer-5","delay":""},{"event":"click","action":"startlayer","layer":"slide-326-layer-1","delay":""}]' data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 7; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="fa fa-remove"></i>
+                                    </div>
+                                    
+                                </li>
+                                
+                                <!-- SLIDE  -->
+                                <li data-index="rs-327" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="images/rs-images/food2-150x100.jpg" data-rotate="0" data-saveperformance="off" data-title="鸡枞菌" data-description="">
+                                
+                                    <!-- MAIN IMAGE -->
+                                    <img src="static/picture/鸡枞菌.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                                    <!-- LAYERS -->
+    
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption FoodCarousel-Content   tp-resizeme" id="slide-327-layer-3" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['420']" data-height="['420']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 5; min-width: 420px; max-width: 420px; max-width: 420px; max-width: 420px; white-space: normal;"><span class="foodcarousel-headline" style=" color: #252525; font-weight:700; text-decoration: underline;">鸡枞菌</span><br>
+                                        别名：鸡枞蕈、鸡菌、鸡堫、鸡宗、鸡肉丝菇、鸡枞菌等<br>
+                                        门：担子菌门（Basidiomycota）<br>
+                                        纲：担子菌纲<br>
+                                        目：伞菌目<br>
+                                        科：伞菌科<br>
+                                        属：蚁巢伞属
+                            <hr style="border-top: 1px solid #292e31;">
+                            菌褶白色至乳白色，长老后带黄色，弯生或近离生，稠密，窄，不等长，边缘波状。菌柄较粗壮，长3-15cm，粗0.7-2.4cm，白色或同菌盖色，内实，基部膨大具有褐色至黑褐色的细长假根，长可达40cm。
+                                    </div>
+    
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption FoodCarousel-Button rev-btn " id="slide-327-layer-1" data-x="center" data-hoffset="" data-y="bottom" data-voffset="50" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="0" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-327-layer-3","delay":""},{"event":"click","action":"startlayer","layer":"slide-327-layer-5","delay":"200"},{"event":"click","action":"stoplayer","layer":"slide-327-layer-1","delay":""}]' data-responsive_offset="on" data-responsive="off" data-lasttriggerstate="reset" style="z-index: 6; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="pe-7s-note2" style="font-size: 21px; float: left;margin-top:-6px;margin-right:10px;"></i> 详情 
+                                    </div>
+    
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption FoodCarousel-CloseButton rev-btn  tp-resizeme" id="slide-327-layer-5" data-x="441" data-y="110" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"stoplayer","layer":"slide-327-layer-3","delay":""},{"event":"click","action":"stoplayer","layer":"slide-327-layer-5","delay":""},{"event":"click","action":"startlayer","layer":"slide-327-layer-1","delay":""}]' data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 7; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="fa fa-remove"></i></div>
+                                    
+                                </li>
+                                
+                                <!-- SLIDE  -->
+                                <li data-index="rs-328" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="images/rs-images/food3-150x100.jpg" data-rotate="0" data-saveperformance="off" data-title="牛肝菌" data-description="">
+                                
+                                    <!-- MAIN IMAGE -->
+                                    <img src="static/picture/牛肝菌.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                                    <!-- LAYERS -->
+    
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption FoodCarousel-Content   tp-resizeme" id="slide-328-layer-3" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['420']" data-height="['420']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 5; min-width: 420px; max-width: 420px; max-width: 420px; max-width: 420px; white-space: normal;"><span class="foodcarousel-headline" style=" color: #252525; font-weight:700; text-decoration: underline;">牛肝菌</span><br>
+                                        拉丁学名：Boletus<br>
+                                        门：真菌门<br>
+                                        纲：层菌纲<br>
+                                        目：伞菌目<br>
+                                        科：牛肝菌科、乳牛肝菌科<br>
+                                        种：牛肝菌
+                            <hr style="border-top: 1px solid #292e31;">
+                            菌盖扁半球形，光滑、不粘、淡裸色，菌肉白色，有酱香味，可入药。大腿蘑营养丰富，味道香美，是极富美味的野生食用菌之一，可出口欧美、日本等国，深受外商欢迎。该菌菌体较大，肉肥厚，柄粗壮，食味香甜可口，营养丰富，是一种世界性著名食用菌。 
+                                    </div>
+    
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption FoodCarousel-Button rev-btn " id="slide-328-layer-1" data-x="center" data-hoffset="" data-y="bottom" data-voffset="50" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="0" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-328-layer-3","delay":""},{"event":"click","action":"startlayer","layer":"slide-328-layer-5","delay":"200"},{"event":"click","action":"stoplayer","layer":"slide-328-layer-1","delay":""}]' data-responsive_offset="on" data-responsive="off" data-lasttriggerstate="reset" style="z-index: 6; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="pe-7s-note2" style="font-size: 21px; float: left;margin-top:-6px;margin-right:10px;"></i> 详情 
+                                    </div>
+    
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption FoodCarousel-CloseButton rev-btn  tp-resizeme" id="slide-328-layer-5" data-x="441" data-y="110" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"stoplayer","layer":"slide-328-layer-3","delay":""},{"event":"click","action":"stoplayer","layer":"slide-328-layer-5","delay":""},{"event":"click","action":"startlayer","layer":"slide-328-layer-1","delay":""}]' data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 7; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="fa fa-remove"></i></div>
+                                    
+                                </li>
+                                
+                               
+                              
+                                    <!-- SLIDE  -->
+                                    <li data-index="rs-330" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="images/rs-images/food4-150x100.jpg" data-rotate="0" data-saveperformance="off" data-title="松茸" data-description="">
+                                
+                                      <!-- MAIN IMAGE -->
+                                      <img src="static/picture/松茸.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                                      <!-- LAYERS -->
+      
+                                      <!-- LAYER NR. 1 -->
+                                      <div class="tp-caption FoodCarousel-Content   tp-resizeme" id="slide-330-layer-3" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['420']" data-height="['420']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 5; min-width: 420px; max-width: 420px; max-width: 420px; max-width: 420px; white-space: normal;"><span class="foodcarousel-headline" style=" color: #252525; font-weight:700; text-decoration: underline;">松茸</span><br>
+                                        别名：松茸、大花菌、松菌<br>
+                                        门：真菌门Eumycota<br>
+                                        纲：层菌纲Hymenomycetes<br>
+                                        目：伞菌目<br>
+                                        科：口蘑科<br>
+                                        属：口蘑属
+                              <hr style="border-top: 1px solid #292e31;">
+                              松茸菌，子实体散生或群生。菌盖直径5~20CM。扁半球形至近平展，污白色，具黄褐色至栗褐色平状的纤毛状的鳞片，表面干燥，菌肉白色，肥厚。菌褶白色或稍带乳黄色，较密，弯生，不等长。菌柄较粗壮，长6~14CM，粗2~2.6CM；菌环以下具栗褐色纤毛状鳞片，内实，基部稍膨大。菌环生于菌柄商埠，丝膜状，上面白色，下面与菌柄同色。孢子呈白色；孢子无色，光滑，款椭圆形至近球形，6.5~7.5mmx4.5~6.2mm。
+                            </div>
+      
+                                      <!-- LAYER NR. 2 -->
+                                      <div class="tp-caption FoodCarousel-Button rev-btn " id="slide-330-layer-1" data-x="center" data-hoffset="" data-y="bottom" data-voffset="50" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="0" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-330-layer-3","delay":""},{"event":"click","action":"startlayer","layer":"slide-330-layer-5","delay":"200"},{"event":"click","action":"stoplayer","layer":"slide-330-layer-1","delay":""}]' data-responsive_offset="on" data-responsive="off" data-lasttriggerstate="reset" style="z-index: 6; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="pe-7s-note2" style="font-size: 21px; float: left;margin-top:-6px;margin-right:10px;"></i> 详情
+                                      </div>
+      
+                                      <!-- LAYER NR. 3 -->
+                                      <div class="tp-caption FoodCarousel-CloseButton rev-btn  tp-resizeme" id="slide-330-layer-5" data-x="441" data-y="110" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"stoplayer","layer":"slide-330-layer-3","delay":""},{"event":"click","action":"stoplayer","layer":"slide-330-layer-5","delay":""},{"event":"click","action":"startlayer","layer":"slide-330-layer-1","delay":""}]' data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 7; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="fa fa-remove"></i></div>
+                                      
+                                  </li>
+                                  
+                                  <!-- SLIDE  -->
+                                  <li data-index="rs-331" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="images/rs-images/food6-150x100.jpg" data-rotate="0" data-saveperformance="off" data-title="羊肚菌" data-description="">
+                                  
+                                      <!-- MAIN IMAGE -->
+                                      <img src="static/picture/羊肚菌.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                                      <!-- LAYERS -->
+      
+                                      <!-- LAYER NR. 1 -->
+                                      <div class="tp-caption FoodCarousel-Content   tp-resizeme" id="slide-331-layer-3" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['420']" data-height="['420']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 5; min-width: 420px; max-width: 420px; max-width: 420px; max-width: 420px; white-space: normal;"><span class="foodcarousel-headline" style=" color: #252525; font-weight:700; text-decoration: underline;">羊肚菌</span><br>
+                                        别名：羊肚蘑、编笠菌、羊肚菜<br>
+                                        门：子囊菌门<br>
+                                        纲：盘菌纲<br>
+                                        目：盘菌目<br>
+                                        科：羊肚菌科<br>
+                                        属：羊肚菌属
+                              <hr style="border-top: 1px solid #292e31;">
+                              羊肚菌，菌盖近球形、卵形至椭圆形，高4-10厘米，宽3-6厘米，顶端钝圆，表面有似羊肚状的凹坑。凹坑不定形至近圆形，宽4-12毫米，蛋壳色至淡黄褐色，棱纹色较浅，不规则地交叉。柄近圆柱形，近白色，中空，基部膨大并有不规则的浅凹槽，长5-7厘米，粗约为菌盖的2/3。
+                                                </div>
+      
+                                      <!-- LAYER NR. 2 -->
+                                      <div class="tp-caption FoodCarousel-Button rev-btn " id="slide-331-layer-1" data-x="center" data-hoffset="" data-y="bottom" data-voffset="50" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="0" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"startlayer","layer":"slide-331-layer-3","delay":""},{"event":"click","action":"startlayer","layer":"slide-331-layer-5","delay":"200"},{"event":"click","action":"stoplayer","layer":"slide-331-layer-1","delay":""}]' data-responsive_offset="on" data-responsive="off" data-lasttriggerstate="reset" style="z-index: 6; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="pe-7s-note2" style="font-size: 21px; float: left;margin-top:-6px;margin-right:10px;"></i> 详情
+                                      </div>
+      
+                                      <!-- LAYER NR. 3 -->
+                                      <div class="tp-caption FoodCarousel-CloseButton rev-btn  tp-resizeme" id="slide-331-layer-5" data-x="441" data-y="110" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(41, 46, 49, 1.00);cursor:pointer;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:800;e:Power3.easeInOut;" data-transform_out="auto:auto;s:500;" data-start="bytrigger" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"stoplayer","layer":"slide-331-layer-3","delay":""},{"event":"click","action":"stoplayer","layer":"slide-331-layer-5","delay":""},{"event":"click","action":"startlayer","layer":"slide-331-layer-1","delay":""}]' data-responsive_offset="on" data-end="bytrigger" data-lasttriggerstate="reset" style="z-index: 7; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><i class="fa fa-remove"></i></div>
+                                      
+                                  </li>
+                                
+                            </ul>
+                            
+                            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+                            
+                        </div>
+                        
+                    </div>
+                    <!--end rev_slider_108_1_wrapper-->
+                    
+                </div>
+                <!--end col-md-12-->
+            
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->    
+        
+    </section>
+    <!--end slideshow section -->
+    
+
+
+
+    <!--begin footer -->
+    <div class="footer">
+            
+        <!--begin container -->
+        <div class="container">
+        
+            <!--begin row -->
+            <div class="row footer-top">
+            
+                
+                
+                <!--begin col-md-3 -->
+                <div class="col-md-3 padding-bottom-50">
+                
+                	<h4>数据来源</h4>
+                    
+                    <ul class="footer-list">
+                        
+                        <li class="first"><a href="#" target="blank"> 蘑菇的分类：http://col.especies.cn/browse/browse_by_distribution_classification</a></li>
+                        
+                        <li><a href="#" target="blank">蘑菇图片：https://www.vcg.com/</a></li>
+                        
+                        <li><a href="#" target="blank">价格趋势数据：https://www.1688.com/jiage/-.html?spm=a261b.12436309.searchbar0.0&keywords=%E7%89%9B%E8%82%9D%E8%8F%8C</a></li>
+                        
+                        <li><a href="#" target="blank">蘑菇知识：小红书相关博主的贴文</a></li>
+                        
+					</ul>
+                    
+                </div>
+                <!--end col-md-3 -->
+
+
+
+                
+
+
+
+
+                
+               
+                
+             
+                
+              
+                
+            </div>
+            <!--end row -->
+            
+            <!--begin row -->
+            <div class="row">
+                
+                <!--begin footer-bottom -->
+                <div class="footer-bottom">
+                
+                    <!--begin col-md-5 -->
+                    <div class="col-md-5">
+                        
+                       
+                       
+                    </div>
+                    <!--end col-md-5 -->
+                    
+                    <!--begin col-md-2 -->
+                    <div class="col-md-2 text-center">
+                    
+                    	<a href="#hero-section" class="scrool top-scroll"><i class="fa fa-angle-double-up"></i></a>
+                        
+                    </div>
+                    <!--end col-md-2 -->
+                    
+                    <!--begin col-md-5 -->
+                    <div class="col-md-5">
+                                                        
+                       
+                        
+                    </div>
+                    <!--end col-md-5 -->
+                        
+                </div>
+                <!--end footer-bottom -->
+                        
+            </div>
+            <!--end row -->
+            
+        </div>
+        <!--end container -->
+                
+    </div>
+    <!--end footer -->
+    
+    
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="static/js/jquery-1.11.3.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap-select.js"></script>
+    <script src="static/js/bootstrap-switch.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/jquery.nav.js"></script>
+    <script src="static/js/jquery.scrollTo-min.js"></script>
+    <script src="static/js/SmoothScroll.js"></script>
+    <script src="static/js/wow.js"></script>
+    <script src="static/js/instafeed.js"></script>
+    <script src="static/js/instagram.js"></script>
+     
+    <!-- RS5.0 Core JS Files -->
+    <script type="text/javascript" src="static/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.themepunch.revolution.min.js"></script>
+    
+	<script type="text/javascript" src="static/js/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="static/js/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="static/js/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="static/js/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="static/js/revolution.extension.carousel.min.js"></script>
+    
+    <!-- begin custom script-->
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/plugins.js"></script>
+
+
+
+<!--<script>
+  $("#one").load("蘑菇的分类.html")
+</script>-->
+
+
+
+
+
+
+
+<!--<script>
+    $("#ditu").load("第三部分.html")
+  </script>-->
+
+    
+
+</body>
+
+
+
+
+</html>

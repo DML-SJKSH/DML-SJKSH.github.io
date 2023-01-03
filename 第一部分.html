@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="static/js/echarts.min.js"> </script>
+   <!-- <script src="static/js/chalk.js"></script>-->
+    <script src="static/js/macarons.js"></script>
+</head>
+<body>
+ <div id="main" style="width: 600px;height:600px;"></div>
+ <!-- <div id="main" style="width: 1470px;height:720px;position: absolute;top: 100;"></div>  -->
+
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'),'chalk');
+
+      // 指定图表的配置项和数据
+
+      var data = [
+        //蘑菇目
+  {
+    name: '蘑菇目',
+    itemStyle: {
+      color: '#ef6c00'
+    },
+    children: [
+    {
+        name: '蘑菇科',
+        itemStyle: {
+          color: '#f57c00'
+        },
+        children: [
+          {
+            name: '大紫蘑菇',
+            value: 1,
+            itemStyle: {
+              color: '#fb8c00'
+            }
+          },
+          {
+            name: '双孢菇',
+            value: 1,
+            itemStyle: {
+              color: '#ff9800'
+            }
+          },
+          {
+            name: '大肥菇',
+            value: 1,
+            itemStyle: {
+              color: '#ffa726'
+            }
+          },
+          {
+            name: '小白菇',
+            value: 1,
+            itemStyle: {
+              color: '#ffb74d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#ffcc80'
+            }
+          },
+        ]
+      },
+
+      {
+        name: '粪伞科',
+        value: 1,
+        itemStyle: {
+          color: '#f57c00'
+        },
+        children: [
+          {
+            name: '粪伞',
+            value: 1,
+            itemStyle: {
+              color: '#fb8c00'
+            }
+          },
+          {
+            name: '变色粪伞',
+            value: 1,
+            itemStyle: {
+              color: '#ff9800'
+            }
+          },
+          {
+            name: '粪锈伞',
+            value: 1,
+            itemStyle: {
+              color: '#ffa726'
+            }
+          },
+          {
+            name: '乳白锥盖伞',
+            value: 1,
+            itemStyle: {
+              color: '#ffb74d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#ffcc80'
+            }
+          },
+        ]
+      },
+
+      {
+        name: '珊瑚菌科',
+        value: 1,
+        itemStyle: {
+          color: '#f57c00'
+        },
+        children: [
+          {
+            name: '小勺珊瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#fb8c00'
+            }
+          },
+          {
+            name: '黄豆芽菌',
+            value: 1,
+            itemStyle: {
+              color: '#ff9800'
+            }
+          },
+          {
+            name: '烟色珊瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffa726'
+            }
+          },
+          {
+            name: '小白珊瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffb74d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#ffcc80'
+            }
+          },
+        ]
+      },
+      {
+        name: '丝膜菌科',
+        value: 1,
+        itemStyle: {
+          color: '#f57c00'
+        },
+        children: [
+          {
+            name: '白丝膜菌',
+            value: 1,
+            itemStyle: {
+              color: '#fb8c00'
+            }
+          },
+          {
+            name: '黄白紫丝膜菌',
+            value: 1,
+            itemStyle: {
+              color: '#ff9800'
+            }
+          },
+          {
+            name: '多型丝膜菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffa726'
+            }
+          },
+          {
+            name: '银色丝膜菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffb74d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#ffcc80'
+            }
+          },
+        ]
+      },
+      {
+        name: '牛排菌科',
+        value: 1,
+        itemStyle: {
+          color: '#f57c00'
+        },
+        children: [
+          {
+            name: '肝色牛排菌',
+            value: 1,
+            itemStyle: {
+              color: '#fb8c00'
+            }
+          },
+          {
+            name: '中国假牛舌菌',
+            value: 1,
+            itemStyle: {
+              color: '#ff9800'
+            }
+          },
+       
+          
+        ]
+      },
+
+      {
+        name: '小菇科',
+        itemStyle: {
+          color: '#f57c00'
+        },
+        children: [
+          {
+            name: '小网孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#fb8c00'
+            }
+          },
+          {
+            name: '粉状网孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#ff9800'
+            }
+          },
+          {
+            name: '杏黄胶孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffa726'
+            }
+          },
+          {
+            name: '丛伞胶孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffb74d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#ffcc80'
+            }
+          },
+          
+        ]
+      }
+    ]
+  },
+
+//木耳目
+  {
+    name: '木耳目',
+    itemStyle: {
+      color: '#ad1457'
+    },
+    children: [
+      {
+        name: '木耳科',
+        itemStyle: {
+          color: '#c2185b'
+        },
+        children: [
+          {
+            name: '黑木耳',
+            value: 1,
+            itemStyle: {
+              color: '#d81b60'
+            }
+          },
+          {
+            name: '木耳',
+            value: 1,
+            itemStyle: {
+              color: '#e91e63'
+            }
+          },
+          {
+            name: '角质木耳',
+            value: 1,
+            itemStyle: {
+              color: '#ec407a'
+            }
+          },
+          {
+            name: '皱木耳',
+            value: 1,
+            itemStyle: {
+              color: '#f06292'
+            }
+          },
+          {
+            name: '琥珀木耳',
+            value: 1,
+            itemStyle: {
+              color: '#f48fb1'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#f8bbd0'
+            }
+          },
+        ]
+      },
+      {
+        name: '归属待定',
+        itemStyle: {
+          color: '#c2185b'
+        },
+        children: [
+          {
+            name: '蜡波多耳',
+            value: 1,
+            itemStyle: {
+              color: '#d81b60'
+            }
+          },
+          {
+            name: '琥珀德克耳',
+            value: 1,
+            itemStyle: {
+              color: '#e91e63'
+            }
+          },
+          {
+            name: '桂花耳',
+            value: 1,
+            itemStyle: {
+              color: '#e9407a'
+            }
+          },
+          {
+            name: '粗毛原迷孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#f06292'
+            }
+          },
+          {
+            name: '虎掌菌',
+            value: 1,
+            itemStyle: {
+              color: '#f48fb1'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#f8bbd0'
+            }
+          },
+        ]
+      },
+    
+    ]
+  },
+
+//牛肝菌目
+  {
+    name: '牛肝菌目',
+    itemStyle: {
+      color: '#6a1b9a'
+    },
+    children: [
+      {
+        name: '牛肝菌科',
+        itemStyle: {
+          color: '#7b1fa2'
+        },
+        children: [
+          {
+            name: '金孔金牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#8e24aa'
+            }
+          },
+          {
+            name: '红盖金牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#9c27b0'
+            }
+          },
+          {
+            name: '氏族金牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ab47bc'
+            }
+          },
+          {
+            name: '西藏金牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ba68c8'
+            }
+          },
+          {
+            name: '桦条孢牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ce93d8'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#e1bee7'
+            }
+          }
+        ]
+      },
+      {
+        name: '褶孔牛肝菌科',
+        itemStyle: {
+          color: '#7b1fa2'
+        },
+        children: [
+          {
+            name: '短小褶孔牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#8e24aa'
+            }
+          },
+          {
+            name: '褶孔牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#9c27b0'
+            }
+          },
+          {
+            name: '黑脉柄牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ab47bc'
+            }
+          },
+          {
+            name: '暗褐脉柄牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ba68c8'
+            },
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#ce93d8'
+            },
+          }
+        ]
+      },
+      {
+        name: '乳牛肝菌科',
+        itemStyle: {
+          color: '#7b1fa2'
+        },
+        children: [
+          {
+            name: '可爱小牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#8e24aa'
+            }
+          },
+          {
+            name: '栗褐小牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#9c27b0'
+            }
+          },
+          {
+            name: '小牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ab47bc'
+            }
+          },
+          {
+            name: '类小牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ba68c8'
+            }
+          },
+          {
+            name: '易惑假牛肝菌',
+            value: 1,
+            itemStyle: {
+              color: '#ce94d8'
+            }
+          },
+        ]
+      },
+      {
+        name: '干腐菌科',
+        itemStyle: {
+          color: '#7b1fa2'
+        },
+        children: [
+          {
+            name: '伏果圆炷菌',
+            value: 1,
+            itemStyle: {
+              color: '#8e24aa'
+            }
+          },
+          {
+            name: '扇索状干腐菌',
+            value: 1,
+            itemStyle: {
+              color: '#9c27b0'
+            }
+          },
+          {
+            name: '伏果干腐菌',
+            value: 1,
+            itemStyle: {
+              color: '#ab47bc'
+            }
+          },
+          {
+            name: '相似干腐菌',
+            value: 1,
+            itemStyle: {
+              color: '#ba68c8'
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+//鸡油菌目
+  {
+    name: '鸡油菌目',
+    itemStyle: {
+      color: '#00965c'
+    },
+    children: [
+      {
+        name: '滑瑚菌科',
+        value: 1,
+        itemStyle: {
+          color: '#00796b'
+        },
+        children: [
+          {
+            name: '弯曲滑瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#009688'
+            }
+          },
+          {
+            name: '树状滑瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#26A69A'
+            }
+          },
+          {
+            name: '裂枝滑瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#4DB6AC'
+            }
+          },
+         
+        ]
+      },
+      {
+        name: '串担革菌科',
+        value: 1,
+        itemStyle: {
+          color: '#00796b'
+        },
+        children: [
+          {
+            name: '白色串担革菌',
+            value: 1,
+            itemStyle: {
+              color: '#00796b'
+            }
+          },
+          {
+            name: '邦氏串担革菌',
+            value: 1,
+            itemStyle: {
+              color: '#26A69A'
+            }
+          },
+          {
+            name: '皱串担革菌',
+            value: 1,
+            itemStyle: {
+              color: '#4DB6AC'
+            }
+          },
+          {
+            name: '类葡串担革菌',
+            value: 1,
+            itemStyle: {
+              color: '#80cbc4'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#b2dfdb'
+            }
+          },
+        ]
+      },
+      {
+        name: '鸡油菌科',
+        itemStyle: {
+          color: '#00796b'
+        },
+        children: [
+          {
+            name: '白鸡油菌',
+            value: 1,
+            itemStyle: {
+              color: '#00796b'
+            }
+          },
+          {
+            name: '白边鸡油菌',
+            value: 1,
+            itemStyle: {
+              color: '#26A69A'
+            }
+          },
+          {
+            name: '紫晶鸡油菌',
+            value: 1,
+            itemStyle: {
+              color: '#4DB6AC'
+            }
+          },
+          {
+            name: '阿巴拉契亚鸡油菌',
+            value: 1,
+            itemStyle: {
+              color: '#80cbc4'
+            }
+          },
+          {
+            name: '黄鸡油菌',
+            value: 1,
+            itemStyle: {
+              color: '#b2dfdb'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#e0f2f1'
+            }
+          },
+        ]
+      },
+      {
+        name: '角担菌科',
+        value: 1,
+        itemStyle: {
+          color: '#00796b'
+        },
+        children: [
+          {
+            name: '禾谷角担菌',
+            value: 1,
+            itemStyle: {
+              color: '#00796b'
+            }
+          },
+          {
+            name: '角担子菌',
+            value: 1,
+            itemStyle: {
+              color: '#26A69A'
+            }
+          },
+          {
+            name: '丝核薄膜革菌',
+            value: 1,
+            itemStyle: {
+              color: '#4DB6AC'
+            }
+          },
+          {
+            name: '罗尔薄膜革菌',
+            value: 1,
+            itemStyle: {
+              color:'#80cbc4'
+            }
+          },
+          {
+            name: '笹木薄膜革菌',
+            value: 1,
+            itemStyle: {
+              color: '#b2dfdb'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#e0f2f1'
+            }
+          },
+        ]
+      },
+      {
+        name: '锁瑚菌科',
+        value: 1,
+        itemStyle: {
+          color: '#00796b'
+        },
+        children: [
+          {
+            name: '梅孔似锁瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#00796b'
+            }
+          },
+          {
+            name: '晶紫锁瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#26A69A'
+            }
+          },
+          {
+            name: '灰锁瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#4DB6AC'
+            }
+          },
+          {
+            name: '珊瑚锁瑚菌',
+            value: 1,
+            itemStyle: {
+              color:'#80cbc4'
+            }
+          },
+          {
+            name: '冠锁瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#b2dfdb'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#e0f2f1'
+            }
+          },
+        ]
+      },
+      {
+        name: '齿菌科',
+        value: 1,
+        itemStyle: {
+          color:  '#00796b'
+        },
+        children: [
+          {
+            name: '豌豆布尔喀霉',
+            value: 1,
+            itemStyle: {
+              color: '#00796b'
+            }
+          },
+          {
+            name: '残波甜齿菌',
+            value: 1,
+            itemStyle: {
+              color: '#26A69A'
+            }
+          },
+          {
+            name: '微白齿菌',
+            value: 1,
+            itemStyle: {
+              color: '#4DB6AC'
+            }
+          },
+          {
+            name: '猬状齿菌',
+            value: 1,
+            itemStyle: {
+              color:'#80cbc4'
+            }
+          },
+          {
+            name: '卷缘齿菌',
+            value: 1,
+            itemStyle: {
+              color: '#b2dfdb'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#e0f2f1'
+            }
+          },
+        ]
+      },
+      {
+        name: '胶膜菌科',
+        value: 1,
+        itemStyle: {
+          color:  '#00796b'
+        },
+        children: [
+          {
+            name: '美孢胶膜菌',
+            value: 1,
+            itemStyle: {
+              color: '#00796b'
+            }
+          },
+          
+        ]
+      },
+    ]
+  },
+
+//钉菇目
+  {
+    name: '钉菇目',
+    itemStyle: {
+      color: '#1565c0'
+    },
+    children: [
+      {
+        name: '棒瑚菌科',
+        itemStyle: {
+          color: '#1976d2'
+        },
+        children: [
+          {
+            name: '灯芯草棒瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#1e88e5'
+            }
+          },
+          {
+            name: '小棒珊瑚',
+            value: 1,
+            itemStyle: {
+              color: '#2196f3'
+            }
+          },
+          {
+            name: '肉色平截棒瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#42a5f5'
+            }
+          },
+          {
+            name: '棒瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#64b5f6'
+            }
+          },
+          {
+            name: '长棒珊瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#90caf9'
+            }
+          },
+          {
+            name: '平截棒瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#bbdefb'
+            }
+          },
+         
+        ]
+      },
+      {
+        name: '钉菇科',
+        itemStyle: {
+          color: '#1976d2'
+        },
+        children: [
+          {
+            name: '承德高腹菌',
+            value: 1,
+            itemStyle: {
+              color: '#1e88e5'
+            }
+          },
+          {
+            name: '高腹菌状高腹菌',
+            value: 1,
+            itemStyle: {
+              color: '#2196f3'
+            }
+          },
+          {
+            name: '大孢高腹菌',
+            value: 1,
+            itemStyle: {
+              color: '#42a5f5'
+            }
+          },
+          {
+            name: '山地高腹菌',
+            value: 1,
+            itemStyle: {
+              color: '#64b5f6'
+            }
+          },
+          {
+            name: '高腹菌',
+            value: 1,
+            itemStyle: {
+              color: '#90caf9'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#bbdefb'
+            }
+          }
+        ]
+      },
+      {
+        name: '木瑚菌科',
+        itemStyle: {
+          color: '#1976d2'
+        },
+        children: [
+          {
+            name: '霉状木瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#1e88e5'
+            }
+          },
+          {
+            name: '枝木瑚菌',
+            value: 1,
+            itemStyle: {
+              color: '#2196f3'
+            }
+          },
+      
+        ]
+      }
+    ]
+  },
+
+//多孔菌目
+  {
+    name: '多孔菌目',
+    itemStyle: {
+      color: '#f9a825'
+    },
+    children: [
+      
+      {
+        name: '拟层孔菌科',
+        value: 1,
+        itemStyle: {
+          color: '#fbc02d'
+        },
+        children: [
+          {
+            name: '柔薄孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffeb3b'
+            }
+          },
+          {
+            name: '柔薄迷孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffee58'
+            }
+          },
+          {
+            name: '多年拟层孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#fff176'
+            }
+          },
+          {
+            name: '红褐拟层孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#fff59d'
+            }
+          },
+          {
+            name: '栗褐暗孔菌',
+            value: 1,
+            itemStyle: {
+              color: '#fff9c4'
+            }
+          },
+         
+        ]
+      },
+      {
+        name: '灵芝科',
+        itemStyle: {
+          color: '#fbc02d'
+        },
+        children: [
+          {
+            name: '厦门假芝',
+            value: 1,
+            itemStyle: {
+              color: '#ffeb3b'
+            }
+          },
+          {
+            name: '耳匙假芝',
+            value: 1,
+            itemStyle: {
+              color: '#ffee58'
+            }
+          },
+          {
+            name: '华南假芝',
+            value: 1,
+            itemStyle: {
+              color: '#fff176'
+            }
+          },
+          {
+            name: '大孔假芝',
+            value: 1,
+            itemStyle: {
+              color: '#fff59d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#fff9c4'
+            }
+          },
+        ]
+      },
+      {
+        name: '干朽菌科',
+        itemStyle: {
+          color: '#fbc02d'
+        },
+        children: [
+          {
+            name: '土色丝皮革菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffeb3b'
+            }
+          },
+          {
+            name: '奇异丝皮革菌',
+            value: 1,
+            itemStyle: {
+              color: '#ffee58'
+            }
+          },
+          {
+            name: '环纹白耙齿菌',
+            value: 1,
+            itemStyle: {
+              color: '#fff176'
+            }
+          },
+          {
+            name: '金干朽菌',
+            value: 1,
+            itemStyle: {
+              color: '#fff59d'
+            }
+          },
+          {
+            name: '其他',
+            value: 1,
+            itemStyle: {
+              color: '#fff9c4'
+            }
+          },
+        ]
+      }
+    ]
+  },
+
+];
+
+
+
+option = {
+  title: {
+    text: '蘑菇的大致分类',
+    
+    textStyle: {
+      fontSize: 15,
+      align: 'center'
+    },
+    subtextStyle: {
+      align: 'center'
+    },
+    sublink: 'https://worldcoffeeresearch.org/work/sensory-lexicon/'
+  },
+  series: {
+    type: 'sunburst',
+    data: data,
+    radius: [0, '95%'],
+    sort: undefined,
+    emphasis: {
+      focus: 'ancestor'
+    },
+    levels: [
+      {},
+      {
+        r0: '15%',
+        r: '35%',
+        itemStyle: {
+          borderWidth: 2
+        },
+        label: {
+          rotate: 'tangential'
+        }
+      },
+      {
+        r0: '35%',
+        r: '70%',
+        label: {
+          align: 'right'
+        }
+      },
+      {
+        r0: '70%',
+        r: '72%',
+        label: {
+          position: 'outside',
+          padding: 3,
+          silent: false
+        },
+        itemStyle: {
+          borderWidth: 3
+        }
+      }
+    ]
+  }
+};
+option && myChart.setOption(option);
+    </script>
+</body>
+</html>

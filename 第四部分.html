@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="static/js/echarts.min.js"> </script>
+   <!-- <script src="static/js/chalk.js"></script>-->
+    <script src="static/js/macarons.js"></script>
+</head>
+<body>
+ <div id="main" style="width: 600px;height:500px;"></div>
+ <!-- <div id="main" style="width: 1470px;height:720px;position: absolute;top: 100;"></div>  -->
+
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'),'chalk');
+
+      // 指定图表的配置项和数据
+
+      option = {
+          title: { 
+    text: '                       孢子的传播方式                     ',
+    subtext: ' 占比',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left'
+  },
+  series: [
+    {
+      name: '总量100',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 22, name: '风力传播' },
+        { value: 19, name: '滴水传播' },
+        { value: 8, name: '动物传播' },
+        { value: 23, name: '融化后滴落' },
+        { value: 28, name: '昆虫传播' }
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+myChart.setOption(option);
+        var myChart1 = echarts.init(document.getElementById('main1'),'pcustomed');
+option && myChart.setOption(option);
+    </script>
+</body>
+</html>

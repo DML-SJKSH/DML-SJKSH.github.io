@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="static/js/echarts.min.js"> </script>
+   <!-- <script src="static/js/chalk.js"></script>-->
+    <script src="static/js/macarons.js"></script>
+</head>
+<body>
+ <div id="main" style="width: 600px;height:500px;"></div>
+ <!-- <div id="main" style="width: 1470px;height:720px;position: absolute;top: 100;"></div>  -->
+
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'),'chalk');
+
+      // 指定图表的配置项和数据
+
+      option = {
+          title: {
+    text: '蘑菇的生长过程'
+  },
+  tooltip: {},
+  animationDurationUpdate: 1500,
+  animationEasingUpdate: 'quinticInOut',
+  series: [
+    {
+      type: 'graph',
+      layout: 'none',
+      symbolSize: 100,
+      roam: true,
+      label: {
+        show: true
+      },
+      edgeSymbol: ['circle', 'arrow'],
+      edgeSymbolSize: [5, 10],
+      edgeLabel: {
+        fontSize: 20
+      },
+      data: [
+        {
+          name: '菌盖打开',
+          x: 400,
+          y: 150
+        },
+        {
+          name: '孢子飘散',
+          x: 550,
+          y: 50
+        },
+        {
+          name: '菌丝生长',
+          x: 700,
+          y: 150
+        },
+        {
+          name: '长出子实体',
+          x: 700,
+          y: 300
+        },
+		{
+          name: '子实体长大',
+          x: 550,
+          y: 400
+        },
+		{
+          name: '菌盖膨大',
+          x: 400,
+          y: 300
+        }
+      ],
+      // links: [],
+      links: [
+        {
+          source: 0,
+          target: 1,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        },
+		{
+          source: 1,
+          target: 2,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        },
+		{
+          source: 2,
+          target: 3,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        },
+		{
+          source: 3,
+          target: 4,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        },
+		{
+          source: 4,
+          target: 5,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        },
+		{
+          source: 5,
+          target: 6,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        },
+		{
+          source: 5,
+          target: 0,
+          symbolSize: [5, 20],
+          lineStyle: {
+            width: 5,
+            curveness: 0.2
+          }
+        }
+      ],
+      lineStyle: {
+        opacity: 0.9,
+        width: 2,
+        curveness: 0
+      }
+    }
+  ]
+};
+
+myChart.setOption(option);
+        var myChart1 = echarts.init(document.getElementById('main1'),'pcustomed');
+option && myChart.setOption(option);
+    </script>
+</body>
+</html>

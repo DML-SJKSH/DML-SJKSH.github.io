@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='static/js/echarts.min.js'></script>
+    <script src='static/js/china.js'></script>
+    <style>
+        #china_chart {
+            text-align: center;
+            margin: 0 auto;
+            line-height: 500px;
+            width: 1300px; 
+            height: 700px;
+           
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>蘑菇分布情况</div>
+
+    <div id="china_chart"></div>
+
+    <script>
+        var china_chart = echarts.init(document.getElementById('china_chart'));
+        //数据纯属虚构  [{城市:数据,...}]
+        var data = [{
+            name: '江苏',
+            value: 1
+        }, {
+            name: '北京',
+            value: 34
+        }, {
+            name: '上海',
+            value: 68
+        }, {
+            name: '重庆',
+            value: 23
+        }, {
+            name: '河北',
+            value: 34
+        }, {
+            name: '河南',
+            value: 3.2
+        }, {
+            name: '云南',
+            value: 1.6
+        }, {
+            name: '辽宁',
+            value: 4.3
+        }, {
+            name: '黑龙江',
+            value: 4.1
+        }, {
+            name: '湖南',
+            value: 2.4
+        }, {
+            name: '安徽',
+            value: 33
+        }, {
+            name: '山东',
+            value: 54
+        }, {
+            name: '新疆',
+            value: 1
+        }, {
+            name: '浙江',
+            value: 44
+        }, {
+            name: '江西',
+            value: 22
+        }, {
+            name: '湖北',
+            value: 2.1
+        }, {
+            name: '广西',
+            value: 3.0
+        }, {
+            name: '甘肃',
+            value: 1.2
+        }, {
+            name: '山西',
+            value: 3.2
+        }, {
+            name: '内蒙古',
+            value: 3.5
+        }, {
+            name: '陕西',
+            value: 2.5
+        }, {
+            name: '吉林',
+            value: 4.5
+        }, {
+            name: '福建',
+            value: 2.8
+        }, {
+            name: '贵州',
+            value: 1.8
+        }, {
+            name: '广东',
+            value: 3.7
+        }, {
+            name: '青海',
+            value: 0.6
+        }, {
+            name: '西藏',
+            value: 0.4
+        }, {
+            name: '四川',
+            value: 3.3
+        }, {
+            name: '宁夏',
+            value: 0.8
+        }, {
+            name: '海南',
+            value: 1.9
+        }, {
+            name: '台湾',
+            value: 0.1
+        }, {
+            name: '香港',
+            value: 0.1
+        }, {
+            name: '澳门',
+            value: 0.1
+        }];
+        methods: {
+        var option = {
+           
+            tooltip: { //悬浮弹框
+                
+                // formatter: function(params) {//data series里面数据 =[{name:'',value:''},{}] 
+                //     return params.name + '：' + params.value + '人';
+                // },
+              //  formatter: '{a}-{b}:{c}人',
+
+                formatter(params) {
+           return `地区：${params.name}</br>分布：${params.value[2]}`;
+       },
+
+      
+
+            show: true,
+          trigger: "item",
+          alwaysShowContent: false,
+          backgroundColor: "#0C121C",
+          borderColor: "rgba(0, 0, 0, 0.16);",
+          hideDelay: 100,
+          triggerOn: "mousemove",
+          enterable: true,
+          textStyle: {
+            color: "#DADADA",
+            fontSize: "10",
+            width: 20,
+            height: 30,
+            overflow: "break",
+
+            },
+            showDelay: 100
+        },
+
+
+
+
+        
+      
+
+
+
+
+            geo: {
+          map: "china",
+          label: {
+            // 通常状态下的样式
+            normal: {
+              show: true,
+              textStyle: {
+                color:"rgba(147, 235, 248, 0)",
+              },
+            },
+            // 鼠标放上去的样式
+            emphasis: {
+              textStyle: {
+                color: "#fff",
+              },
+            },
+          },
+          // 地图区域的样式设置
+          itemStyle: {
+            normal: {
+              borderColor: "rgba(147, 235, 248, 1)",
+              borderWidth: 1,
+              areaColor: {
+                type: "radial",
+                x: 0.5,
+                y: 0.5,
+                r: 0.8,
+                colorStops: [
+                  {
+                    offset: 0,
+                    color: "rgba(147, 235, 248, 0)", // 0% 处的颜色
+                  },
+                  {
+                    offset: 1,
+                    color: "rgba(147, 235, 248, .2)", // 100% 处的颜色
+                  },
+                ],
+                globalCoord: false, // 缺省为 false
+              },
+              shadowColor: "rgba(128, 217, 248, 1)",
+              shadowOffsetX: -2,
+              shadowOffsetY: 2,
+              shadowBlur: 10,
+            },
+            // 鼠标放上去高亮的样式
+            emphasis: {
+              areaColor: "#389BB7",
+              borderWidth: 0,
+            },
+          },
+        },
+
+
+
+
+       series: [
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(255,0,0,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [102.891454,24.732016, '鸡枞菌'] },
+    { name: "贵州", value: [108.425016,26.215215, '鸡枞菌'] },
+            { name: "广西", value: [108.806185,22.588371, '鸡枞菌'] },
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(255,116,0,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [101.139687,25.816237, '牛肝菌'] },
+    { name: "贵州", value: [107.541946,28.123929, '牛肝菌'] },
+            { name: "安徽", value: [116.740594,32.962573, '牛肝菌'] },
+            { name: "四川", value: [100.624562,31.713045, '牛肝菌'] },
+            { name: "江苏", value: [119.316216,34.194513, '牛肝菌'] },
+            { name: "浙江", value: [119.83134,29.291772, '牛肝菌'] },
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(255,238,0,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [99.373546,25.616235, '松茸'] },
+        { name: "四川", value: [100.992508,30.57372, '松茸'] },
+        { name: "吉林", value: [125.424118,44.398121, '松茸'] },
+        { name: "西藏", value: [125.424118,44.398121, '松茸'] },
+    
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(91,255,0,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [125.424118,44.398121, '干巴菌'] },
+        { name: "四川", value: [99.741492,31.713045, '干巴菌'] },
+        { name: "贵州", value: [105.113503,26.414189, '干巴菌'] },
+
+      
+    
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(0,255,214,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [100.698151,22.713246, '羊肚菌'] },
+        { name: "河南", value: [113.944205,33.395769, '羊肚菌'] },
+        { name: "陕西", value: [109.308086,37.018631, '羊肚菌'] },
+        { name: "吉林", value: [123.952335,44.923346, '羊肚菌'] },
+        { name: "西藏", value: [91.79386,30.254801, '羊肚菌'] },
+        { name: "四川", value: [106.217341,31.587138, '羊肚菌'] },
+        { name: "山西", value: [111.73653,37.606433, '羊肚菌'] },
+        { name: "北京", value: [116.299059,39.967599, '羊肚菌'] },
+        { name: "新疆", value: [87.084152,42.249337, '羊肚菌'] },
+        { name: "黑龙江", value: [130.72254,46.521111, '羊肚菌'] },
+    
+
+      
+    
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(0,255,214,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [103.053005,23.462179, '青头菌'] },
+        { name: "辽宁", value: [122.480551,41.534517, '青头菌'] },
+        { name: "吉林", value: [128.220508,42.739487, '青头菌'] },
+        { name: "黑龙江", value: [130.428183,45.236182, '青头菌'] },
+        { name: "湖南", value: [112.104476,28.123929, '青头菌'] },
+       
+    
+
+      
+    
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(0,150,255,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [103.788897,26.148814, '珊瑚菌'] },
+        { name: "辽宁", value: [119.904929,41.090626, '珊瑚菌'] },
+        { name: "吉林", value: [124.246691,44.766282, '珊瑚菌'] },
+        { name: "黑龙江", value: [125.350529,46.723926, '珊瑚菌'] },
+        { name: "湖南", value: [110.117567,28.968695, '珊瑚菌'] },
+       
+    
+
+      
+    
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+
+    {
+        type: "scatter",
+        coordinateSystem: "geo",
+        symbol: "pin",
+        legendHoverLink: true,
+        symbolSize: [60, 60],
+        // 这里渲染标志里的内容以及样式
+        label: {
+            show: true,
+            formatter(value) {
+                return value.data.value[2];
+            },
+            color: "#fff",
+        },
+        // 标志的样式
+        itemStyle: {
+            normal: {
+                color: "rgba(123,0,255,.7)",
+                shadowBlur: 2,
+                shadowColor: "D8BC37",
+            },
+        },
+        // 数据格式，其中name,value是必要的，value的前两个值是数据点的经纬度，其他的数据格式可以自定义
+        // 至于如何展示，完全是靠上面的formatter来自己定义的
+        data: [
+        { name: "云南", value: [106.879643,31.713045, '红菇'] },
+        { name: "辽宁", value: [122.774908,40.362816, '红菇'] },
+        { name: "福建", value: [117.476486,25.616235, '红菇'] },
+        { name: "江西", value: [116.004702,27.99336, '红菇'] },
+        { name: "河南", value: [113.723438,33.888194, '红菇'] },
+        { name: "四川", value: [99.520725,30.828096, '红菇'] },
+        { name: "广西", value: [110.043978,23.190329, '红菇'] },
+        
+       
+    
+
+      
+    
+        ],
+        showEffectOn: "render",
+        rippleEffect: {
+            brushType: "stroke",
+        },
+        hoverAnimation: true,
+        zlevel: 1,
+    },
+
+
+   
+],
+
+
+
+
+
+
+
+
+    }
+
+        };
+
+        china_chart.setOption(option);
+    </script>
+</body>
+
+</html>
